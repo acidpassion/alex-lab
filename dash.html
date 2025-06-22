@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DORA Metrics Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="slide-container">
+        <header class="slide-header">
+            <div class="logo">DORA</div>
+            <h1>DevOps Performance Metrics</h1>
+        </header>
+
+        <main class="metrics-table-container">
+            <table>
+                <thead>
+                    <tr>
+                        <th class="placeholder"></th>
+                        <th colspan="3" class="team-header">Equities</th>
+                        <th colspan="3" class="team-header">SecFin</th>
+                    </tr>
+                    <tr>
+                        <th class="placeholder"></th>
+                        <th>Rel Frequency</th>
+                        <th>LTTD (Median)</th>
+                        <th>Change Failure</th>
+                        <th>Rel Frequency</th>
+                        <th>LTTD (Median)</th>
+                        <th>Change Failure</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th>Baseline 2024</th>
+                        <td class="status-baseline">350</td>
+                        <td class="status-baseline">NA</td>
+                        <td class="status-baseline">0.42%</td>
+                        <td class="status-baseline">500</td>
+                        <td class="status-baseline">NA</td>
+                        <td class="status-baseline">0.20%</td>
+                    </tr>
+                    <tr>
+                        <th>GCIO Target</th>
+                        <td class="status-target">
+                            <span class="main-value">403</span>
+                            <span class="sub-value">15% > 2024</span>
+                        </td>
+                        <td class="status-target">2.2</td>
+                        <td class="status-target">
+                            <span class="main-value">50% <span class="arrow-down">↓</span></span>
+                            <span class="sub-value">(0.21%)</span>
+                        </td>
+                        <td class="status-target">
+                            <span class="main-value">575</span>
+                            <span class="sub-value">15% > 2024</span>
+                        </td>
+                        <td class="status-target">2.2</td>
+                        <td class="status-target">
+                            <span class="main-value">50% <span class="arrow-down">↓</span></span>
+                            <span class="sub-value">(0.10%)</span>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>YTD May</th>
+                        <td class="status-good">
+                            <span class="main-value">416</span>
+                            <span class="sub-value">(2150 CRs)</span>
+                        </td>
+                        <td class="status-bad">
+                            <span class="main-value">7.9</span>
+                            <span class="sub-value">(85% CRs)</span>
+                        </td>
+                        <td class="status-bad">0.32%</td>
+                        <td class="status-bad">
+                            <span class="main-value">469</span>
+                            <span class="sub-value">(2000 CRs)</span>
+                        </td>
+                        <td class="status-good">
+                            <span class="main-value">2.1</span>
+                            <span class="sub-value">(90% CRs)</span>
+                        </td>
+                        <td class="status-bad">0.27%</td>
+                    </tr>
+                    <tr>
+                        <th>Req Rate</th>
+                        <td class="status-warning">
+                            <span class="main-value">> 2200</span>
+                            <span class="sub-value">CRs Monthly</span>
+                        </td>
+                        <td class="status-bad">< 2.2</td>
+                        <td class="status-warning">< 0.13%</td>
+                        <td class="status-warning">
+                             <span class="main-value">> 2300</span>
+                            <span class="sub-value">CRs Monthly</span>
+                        </td>
+                        <td class="status-good">< 2.2</td>
+                        <td class="status-warning">0.02%</td>
+                    </tr>
+                    <tr>
+                        <th>Trend YTD May 25</th>
+                        <td class="status-warning">
+                            <svg class="trend-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15C8 15 12 12 16 12L20 12M17 9L20 12L17 15"></path></svg>
+                        </td>
+                        <td class="status-bad">
+                            <svg class="trend-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15C8 15 12 12 16 12L20 12M17 9L20 12L17 15"></path></svg>
+                        </td>
+                        <td class="status-good">
+                            <svg class="trend-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12C8 12 12 15 16 15L20 15M17 18L20 15L17 12"></path></svg>
+                        </td>
+                        <td class="status-good">
+                            <svg class="trend-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 15C8 15 12 12 16 12L20 12M17 9L20 12L17 15"></path></svg>
+                        </td>
+                        <td class="status-good">
+                            <svg class="trend-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12C8 12 12 15 16 15L20 15M17 18L20 15L17 12"></path></svg>
+                        </td>
+                        <td class="status-good">
+                            <svg class="trend-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12C8 12 12 15 16 15L20 15M17 18L20 15L17 12"></path></svg>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </main>
+        
+        <footer class="slide-footer">
+            <p>♦ INTERNAL</p>
+        </footer>
+    </div>
+
+</body>
+</html>
