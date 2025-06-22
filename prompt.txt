@@ -1,0 +1,8 @@
+Core Principles of this Architecture
+Routes: Define the API endpoints (e.g., /users, /products). They only map endpoints to controller functions.
+Controllers: Handle the incoming request and outgoing response. They act as a bridge between the HTTP layer and your business logic. They call services to do the actual work.
+Services: Contain the core business logic. They are independent of the web layer (Express) and are responsible for orchestrating data operations.
+Models: Represent your data structure and handle all database interactions (e.g., using an ORM like Mongoose or Sequelize).
+Middleware: Functions that run between the request and the response, used for tasks like logging, authentication, validation, and error handling.
+Config: Centralized management for environment variables and configuration settings.
+Utils: Reusable helper functions and classes.
